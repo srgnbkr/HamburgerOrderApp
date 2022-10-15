@@ -7,7 +7,7 @@
 
   ],
   "ingredients": [
-    {"id": 1,"name": "Marul-Turşu","stockAmount":0},
+    {"id": 1,"name": "Marul-Turşu","stockAmount":5},
     {"id": 2,"name": "Domates","stockAmount":5},
     {"id": 3,"name": "Soğan","stockAmount":5},
     {"id": 4,"name": "Paket-Sos","stockAmount":5}

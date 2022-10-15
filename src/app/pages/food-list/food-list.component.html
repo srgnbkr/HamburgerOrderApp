@@ -1,1 +1,23 @@
-<p>food-list works!</p>
+<div class="row">
+
+    <div class="col-md-8">
+      <h5 class="mt-4">Et Türü</h5>
+      <hr>
+      <app-meat-list *ngFor="let meat of meats" [meat]="meat">
+      </app-meat-list>
+      <hr>
+      <h5>İç Malzeme</h5>
+      <app-ingredient-list *ngFor="let ingredient of ingredients" [ingredient]="ingredient"></app-ingredient-list>
+      <hr>
+      <h5>Kızarmış Ürünler</h5>
+      <app-fried-food-list *ngFor="let friedFood of friedFoods" [friedFood]="friedFood"></app-fried-food-list>
+      <hr>
+      <h5>İçecekler</h5>
+      <app-drink-list *ngFor="let drink of drinks" [drink]="drink"></app-drink-list>
+    </div>
+
+  <div class="col-md-4">
+    <app-basket-list></app-basket-list>
+  </div>
+
+</div>

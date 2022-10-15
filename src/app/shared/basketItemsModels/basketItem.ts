@@ -22,3 +22,7 @@ export class DrinkBasket {
   quantity: number;
   drink: Drink;
 }
+
+export class CookingDegree {
+  time: number;
+}

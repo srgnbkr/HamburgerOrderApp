@@ -1,1 +1,27 @@
-<p>meat-list works!</p>
+
+<div class="product mt-4">
+
+  <div class="product-name">
+    {{ meat.name }}
+  </div>
+
+  <select *ngIf="meat.name==='Köfte'"  (change)="selectChangeHandler($event)" class="form-select form-select-sm" aria-label=".form-select-sm example">
+    <option selected>Pişirme Seçimi</option>
+    <option *ngFor="let item of cookingDegrees" [value]="item.time">{{item.name}} | {{item.time/1000}} Saniye</option>
+  </select>
+  <select (change)="selectChangeHandler($event)" *ngIf="meat.name==='Tavuk'"  class="form-select form-select-sm" aria-label=".form-select-sm example">
+    <option selected>Pişirme Seçimi</option>
+    <option  [value]="cookingDegrees[1].time">{{cookingDegrees[1].name}} | {{cookingDegrees[1].time/1000}} Saniye</option>
+  </select>
+
+
+  <div
+    class="quantity-bar d-flex justify-content-between align-items-center mt-2"
+  >
+
+    <button [disabled]="clicked" (click)="addToBasket(meat)" class="btn btn-sm btn-success">Sepete Ekle</button>
+    <button (click)="removeFromBasket(meat)" class="btn btn-sm btn-danger">Sepetten Çıkar</button>
+  </div>
+
+</div>
+

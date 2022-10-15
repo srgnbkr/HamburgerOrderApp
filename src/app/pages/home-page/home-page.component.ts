@@ -18,7 +18,7 @@ export class HomePageComponent implements OnInit {
   spinnerMessage = 'Stok Kontorlü Yapılıyor...';
   stockAmountSubs$ = new Observable<any>((observer) => {
     this.isStockAmount.length > 0
-      ? observer.next('Eksik Ürün :(')
+      ? observer.next('Stokta ürün olmadığı için siparişinizi alamıyoruz :(')
       : setTimeout(() => {
           observer.next(this.router.navigate(['/ürünler']));
         }, 3000);

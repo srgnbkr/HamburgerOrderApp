@@ -1,0 +1,20 @@
+
+<div class="product mt-4">
+
+  <div class="product-name">
+    {{ drink.name }}
+  </div>
+
+
+
+
+  <div
+    class="quantity-bar d-flex justify-content-between align-items-center mt-2"
+  >
+
+    <button (click)="addToBasket(drink)"  class="btn btn-sm btn-success">Sepete Ekle</button>
+    <button (click)="removeFromBasket(drink)" class="btn btn-sm btn-danger">Sepetten Çıkar</button>
+  </div>
+
+</div>
+
