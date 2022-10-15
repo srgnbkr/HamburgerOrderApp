@@ -1,5 +1,5 @@
 export interface  BaseInterfaceModel{
-  id:1,
+  id:number,
   name:string,
   stockAmount:number,
 }

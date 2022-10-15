@@ -1,0 +1,18 @@
+{
+
+  "meats":[
+    {"id": 1,"name": "Ekmek","stockAmount": 5},
+    {"id": 2,"name": "Köfte","stockAmount":5},
+    {"id": 3,"name": "Tavuk","stockAmount":5}
+
+  ],
+  "ingredients": [
+    {"id": 1,"name": "Marul-Turşu","stockAmount":0},
+    {"id": 2,"name": "Domates","stockAmount":5},
+    {"id": 3,"name": "Soğan","stockAmount":5},
+    {"id": 4,"name": "Paket-Sos","stockAmount":5}
+  ],
+  "friedFoods": [{"id": 1,"name": "Patates-Kızartması","stockAmount":5}],
+  "drinks": [{"id": 1,"name": "Kola","stockAmount":5}]
+
+}
