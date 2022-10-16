@@ -1,27 +1,49 @@
 # HamburgerOrderApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
+## Angular Hamburger Hazırlama Projesi
 
-## Development server
+<img src="screenshots/StokKontrol.png" style="width:350px;" >
+<img src="screenshots/ürünler.png" style="width:350px;" >
+<img src="screenshots/sipariş-hazırlama.png" style="width:350px;" >
+<img src="screenshots/sipariş-hazır.png" style="width:350px;" >
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Malzeme Listesi:
+Tüm malzemelerden 5’er adet olduğu varsayılacaktır.
+- Marul Turşu
+- Paket Sos
+- Soğan
+- Köfte
+- Tavuk
+- Domates
+- Ekmek
+- Patates
+- Cola
+İş Süreci:
+1. Sipariş al (1 Saniye)
+2. Her malzeme için stok kontrolü (3 saniye)
+- Eğer stokta malzeme eksiği varsa uyarı mesajı verilmeli,
+işlem iptal edilmeli, yeni istek alınmamalı)
+3. Köfte mi? - Tavuk mu? sorgusu(1 saniye)
+Köfte ise :
+- Pişme derecesi kontrolü
+- Az Pişmiş(2 saniye)
+- Orta Pişmiş (3 saniye)
+- Çok Pişmiş (4 saniye)
+Tavuk ise:
+- Tavuk Pişir (3 saniye)
+- Hamburger Yapımı(2 saniye): Köfte veya Tavuk(1 adet), Marul(1
+adet), Domates(1 adet), Turşu(1 adet), Soğan(1 adet)
+hamburger ekmeğiyle birleştirilecek. Malzemeler siparişte varsa
+eklenmeli!
+4. Patatesleri Kızart (5 saniye)
+5. İçeçeği Hazırla (2 saniye)
+6. Sosları ve Ürünleri Servis Tepsisine Koy (1 saniye)
+7. Müşteriye Servis Et (1 saniye)
+Genel sistemin akış şeması: 1. step -> 2. step -> 3,4,5 -> 6 -> 7 3,4 ve
+5. stepler aynı anda başlatılmalı. Birbirlerinin bitmesini beklememeli. 6.
+step, 3,4 ve 5. stepler bittikten sonra başlamalı 7. step, 6. stepten sonra
+başlayacak.
+Verilen malzeme listesi ve iş sürecini kullanarak bir hamburger
+işletmesi fonksiyonelitesi hazırlanmalıdır. Html, css ya da bootstrap
+kullanarak görüntü katabilirsiniz
