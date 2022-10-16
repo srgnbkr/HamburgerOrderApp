@@ -16,6 +16,7 @@ import { IngredientListComponent } from './pages/food-list/ingredient-list/ingre
 import { BasketListComponent } from './pages/food-list/basket-list/basket-list.component';
 import { FriedFoodListComponent } from './pages/food-list/fried-food-list/fried-food-list.component';
 import { DrinkListComponent } from './pages/food-list/drink-list/drink-list.component';
+import { CreateOrderComponent } from './pages/create-order/create-order.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { DrinkListComponent } from './pages/food-list/drink-list/drink-list.comp
     IngredientListComponent,
     BasketListComponent,
     FriedFoodListComponent,
-    DrinkListComponent
+    DrinkListComponent,
+    CreateOrderComponent
   ],
   imports: [
     BrowserModule,

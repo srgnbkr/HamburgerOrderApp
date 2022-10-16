@@ -9,6 +9,7 @@
   <li class="list-group-item d-flex justify-content-between align-items-start">
     <div class="ms-2 me-auto">
       <div class="fw-bold">İç Malzemeler</div>
+      <span *ngIf="ingredientBaskets.length===0">İç Malzeme Yok</span>
       <div *ngFor="let ingredient of ingredientBaskets">
         <span>{{ingredient.ingredient.name}}</span>
         <span class="badge bg-success rounded-pill m-2">{{ingredient.quantity}}</span>
@@ -23,5 +24,11 @@
     </div>
 
   </li>
+  <li *ngFor="let drink of drinkBaskets" class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold">{{drink.drink.name}}</div>
+    </div>
 
+  </li>
+  <button routerLink="/sipariş-oluştur" class="btn btn-outline-warning">Sipariş Sayfasına Git</button>
 </ol>
